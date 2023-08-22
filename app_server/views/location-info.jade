@@ -1,0 +1,14 @@
+extends layout 
+block content 
+    .row.page-header 
+        .col-lg-12
+            h1  AnuragCET 2023 Results
+    .row 
+        .col-xs-12.col-md-12
+            form#signin.form-horizontal(action= 'url', method='post', role='form')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') Enter your mobile number.
+                        .col-xs-12.col-sm-12
+                            input#name.form-control(name='name')
+                            Please try with +91 before your phone number if you face any problems 
+              button.btn.btn-default.pull-right Get Result

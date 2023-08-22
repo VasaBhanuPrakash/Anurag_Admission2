@@ -1,0 +1,90 @@
+extends layout 
+block content 
+    .row.page-header 
+        .col-lg-12 
+            h1=title
+    .row 
+        .col-xs-12.col-md-12 
+            a(href='signin')
+                button.btn.btn-default.pull-right Log In
+            button.btn.btn-default.pull-right Register 
+            form#register.form-horizontal(action='url',method='post',role='form')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name')  First Name
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                    label.col-xs-10.col-sm-2.control-label(for='name') Last Name
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='number') Mobile Number
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='number')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') Email
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') Degree
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') Program
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='password') Password
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='password')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='state') State
+                        .col-xs-12.col-sm-12
+                            select#state.form-control.input-sm(name='state')
+                                option Andaman and Nicobar Islands
+                                option Andhra Pradesh
+                                option Arunachal Pradesh
+                                option Assam
+                                option Bihar
+                                option Chandigarh
+                                option Chhattisgarh
+                                option Dadra and Nagar Haveli
+                                option Daman and Diu
+                                option Delhi
+                                option Goa
+                                option Gujarat
+                                option Haryana
+                                option Himachal Pradesh
+                                option Jammu and Kashmir
+                                option Jharkhand
+                                option Karnataka
+                                option Kerala
+                                option Ladakh
+                                option Lakshadweep
+                                option Madhya Pradesh
+                                option Maharashtra
+                                option Manipur
+                                option Meghalaya
+                                option Mizoram
+                                option Nagaland
+                                option Odisha
+                                option Puducherry
+                                option Punjab
+                                option Rajasthan
+                                option Sikkim
+                                option Tamil Nadu
+                                option Telangana
+                                option Tripura
+                                option Uttar Pradesh
+                                option Uttarakhand
+                                option West Bengal
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') City
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    .col-xs-12.col-sm-10
+                            input#name.form-control(type="checkbox",id="checkboxId",name="checkboxName",value="checkboxValue")
+                            label.col-xs-10.col-sm-2.control-label(for='name') I am Not a Robot
+            a(href='signin')
+                button.btn.btn-default.pull-right Submit
+        .col-xs-12.col-md-4
